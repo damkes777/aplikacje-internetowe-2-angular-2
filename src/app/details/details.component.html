@@ -1,1 +1,8 @@
-<p>details works!</p>
+<div *ngIf="person">
+    <p>First Name: {{ person.firstName }}</p>
+    <p>Family Name: {{ person.familyName }}</p>
+    <p>Age: {{ person.age }}</p>
+    <p>City: {{ person.address.city }}</p>
+    <p>Street: {{ person.address.street }}</p>
+    <p>Post Code: {{ person.address.postCode }}</p>
+</div>
